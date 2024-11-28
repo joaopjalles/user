@@ -1,8 +1,9 @@
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
@@ -13,10 +14,10 @@ import java.util.List;
 @ToString
 @Builder
 
-public class Role {
+public class Role implements Serializable {
 
         @Id
-        private String Id;
+        private String id;
         private String socialId;
         private String role;
         private String description;
