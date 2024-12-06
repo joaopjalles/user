@@ -1,6 +1,6 @@
 package com.project.user.Controller;
 
-import com.project.user.DTO.UserDTO;
+import com.project.user.dto.UserDTO;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 import io.swagger.v3.oas.annotations.Operation;

@@ -1,4 +1,4 @@
-package com.project.user.DTO;
+package com.project.user.dto;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -7,8 +7,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
-@Entity
-@Table(name = "usuario")
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +16,7 @@ import lombok.*;
 public class UserDTO {
 
     @NotBlank(message = "O nome do usuário é obrigatório.")
-    @Size(min = 3, max = 50, message = "O nome deve ter entre 3 e 50 caracteres.")
+    @Size(min = 3, max = 15, message = "O nome deve ter entre 3 e 15 caracteres.")
     private String name;
 
     @NotBlank(message = "O email é obrigatório.")
@@ -25,7 +24,7 @@ public class UserDTO {
     private String email;
 
     @NotBlank(message = "O nome do usuário é obrigatório.")
-    @Size(min = 3, max = 50, message = "O nome deve ter entre 3 e 50 caracteres.")
+    @Size(min = 3, max = 15, message = "A Id deve ter entre 3 e 15 caracteres.")
     private String socialId;
 
     @NotBlank(message = "O número do usuário é obrigatório.")
