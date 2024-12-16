@@ -14,8 +14,10 @@ public class SpringFoxConfig {
     public Docket api() {
         return new Docket(DocumentationType.OAS_30)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage(""))
+                .apis(RequestHandlerSelectors.basePackage("com.project.user.controllers"))
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .pathMapping("/api/v2")
+                .host("http://localhost:8080/h2-console/");
     }
 }

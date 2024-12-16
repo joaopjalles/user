@@ -1,8 +1,14 @@
 com\project\user\Address\Address.class
-com\project\user\Role\Role.class
 com\project\user\User\User.class
 com\project\user\Role\Role$RoleBuilder.class
+com\project\user\dto\UserDTO$UserDTOBuilder.class
 com\project\user\config\SpringFoxConfig.class
-com\project\user\UserApplication.class
 com\project\user\Address\Address$AddressBuilder.class
+com\project\user\Controller\AddressController.class
+com\project\user\Role\Role.class
+com\project\user\Controller\UserController.class
+com\project\user\UserApplication.class
+com\project\user\config\SwaggerConfig.class
 com\project\user\User\User$UserBuilder.class
+com\project\user\dto\UserDTO.class
+com\project\user\Controller\RoleController.class
